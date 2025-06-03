@@ -5,7 +5,7 @@ pipeline {
             steps {
                 sh '''
                     cd ~/simulation_ws/src/ros1_ci
-                    git reset --hard origin/master
+                    git pull
                     sudo docker-compose build
                 '''
             }
